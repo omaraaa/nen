@@ -9,8 +9,8 @@ function App() {
     <div className="w-full">
 
       <main className="main">
-        <header className="top">
-          <h1 className="title">
+        <header>
+          <h1 className="title font-serif font-bold ">
             NEN
           </h1>
 
@@ -20,7 +20,7 @@ function App() {
         </header>
       </main>
 
-      <footer className="footer">
+      <footer>
       </footer>
     </div>
   )
