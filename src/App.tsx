@@ -15,7 +15,7 @@ function App() {
           </h1>
 
           <p className="description">
-            Coming Soon!
+            Work In Progress!
           </p>
         </header>
       </main>
