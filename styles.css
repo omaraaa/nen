@@ -31,7 +31,10 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
 .header {
   background-color: #ffffff;
+}
 
+main {
+  background-color: #ffffff;
 }
 
 body {
@@ -39,7 +42,7 @@ body {
   margin: auto;
   display: flex;
   flex-direction: column;
-  max-width: 64rem;
+  max-width: 72rem;
 }
 
 p {
@@ -85,7 +88,21 @@ p, h1, h2, h3, h4, h5, h6 {
 main {
   min-height: 90vh;
 }
-p {
-  text-indent: 3vw;
-  padding: 2rem;
+
+.animate-grad {
+  background-size: 120% 120%;
+  animation: gradient 60s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
