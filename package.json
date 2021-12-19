@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export"
+    "build": "next build && next export -o dist/out",
+    "deploy": "cd dist && git add . && git commit -m `build` && git push origin main"
   },
   "dependencies": {
     "next": "^12.0.4",
@@ -17,7 +18,7 @@
     "@types/react-router-dom": "^5.3.0",
     "autoprefixer": "^10.3.5",
     "postcss": "^8.3.8",
-    "tailwindcss": "^2.2.15",
+    "tailwindcss": "^3.0.0",
     "typescript": "^4.3.2"
   }
 }

@@ -22,7 +22,8 @@
     "incremental": true
   },
   "include": [
-    "./src"
+    "./pages",
+    "./components"
   ],
   "exclude": [
     "node_modules"
