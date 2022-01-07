@@ -7,10 +7,13 @@
     "deploy": "cd dist && git add . && git commit -m `build` && git push origin main"
   },
   "dependencies": {
+    "@react-three/fiber": "^7.0.24",
+    "framer-motion": "^5.5.5",
     "next": "^12.0.4",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^5.3.0",
+    "three": "^0.135.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

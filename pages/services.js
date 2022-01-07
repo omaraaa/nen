@@ -38,6 +38,21 @@ export default () => (
             </div>
           </div>
         </section>
+        <section className=' p-4'>
+          <div className='text-black text-2xl font-black'>
+            Contact Us
+          </div>
+          <form className='flex flex-col m-2 p-2 space-y-2'>
+            <label for="email" className='font-bold text-lg'>Email</label>
+            <input type="text" name="text" className='p-1 border border-gray-400 w-full rounded'></input>
+            <label for="email" className='font-bold text-lg'>Message</label>
+            <textarea type="email" name="email" className='p-1 border border-gray-400 w-full h-64 rounded'></textarea>
+
+            <div className='flex justify-end '>
+              <button className="hover:bg-gray-300 border border-gray-600 shadow-gray-600 shadow  rounded-lg py-4 md:py-2 font-semibold w-32" type="submit">Send</button>
+            </div>
+          </form>
+        </section>
       </div>
     </Article>
   </Layout>

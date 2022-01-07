@@ -5,6 +5,7 @@ import Drawer from "./Drawer"
 const Left = <>
   <a className="text-black text-lg hover:underline mt-1" href="/about">About</a>
   <a className="text-black text-lg hover:underline mt-1" href="/services">Services</a>
+  <a className="text-black text-lg hover:underline mt-1" href="/dashboard">Dashboard</a>
 </>
 
 const Right = <>
