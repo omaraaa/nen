@@ -2,27 +2,31 @@ import { useState } from "react"
 import Drawer from "./Drawer"
 
 
+const HeaderLink = ({ children, href, ...props }) => {
+  return <a className="text-lg py-1 px-2 rounded-lg hover:shadow hover:shadow-black" href={href} {...props}>{children}</a>
+}
+
 const Left = <>
-  <a className="text-black text-lg hover:underline mt-1" href="/about">About</a>
-  <a className="text-black text-lg hover:underline mt-1" href="/services">Services</a>
-  <a className="text-black text-lg hover:underline mt-1" href="/dashboard">Dashboard</a>
+  <HeaderLink href="/about">About</HeaderLink>
+  <HeaderLink href="/services">Services</HeaderLink>
+  <HeaderLink href="/dashboard">Dashboard</HeaderLink>
 </>
 
 const Right = <>
-  <a className="text-black text-lg hover:underline mt-1" href="/login">Login</a>
-  <a className="text-black text-lg hover:underline mt-1" href="/register">Register</a>
+  <HeaderLink href="/login">Login</HeaderLink>
+  <HeaderLink href="/register">Register</HeaderLink>
 </>
 
 export default () => {
   const [open, setOpen] = useState(false)
   return (
     <>
-      <header className="flex w-full leading-none tracking-tighter lg:border-none border-b select-none ">
-        <div className="flex w-full space-x-4 p-4 items-center">
+      <header className="flex w-full leading-none tracking-tighter lg:border-none select-none">
+        <div className="flex w-full space-x-4 sm:py-3 py-4 items-center">
 
-          <a href="/" className="text-black text-4xl font-black mr-4">NEN.AE</a>
+          <a href="/" className="text-4xl font-black mr-4">NEN.AE</a>
 
-          <div className="hidden sm:flex w-full space-x-4 pr-4">
+          <div className="hidden sm:flex w-full space-x-4 pr-8">
             {Left}
             <div className="flex-grow px-px"></div>
             {Right}
@@ -34,10 +38,11 @@ export default () => {
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg></span>
         </button>
-
       </header >
-      <div className=" py-1  bg-gradient-to-r from-green-400 to-blue-500 via-red-500"></div>
-      <Drawer open={open} class="flex flex-col items-center">
+      <div className="static">
+        <div className=" py-1 sm:py-[2px] bg-gradient-to-r from-green-400 to-blue-500 via-red-500 w-full left-0 absolute "></div>
+      </div>
+      <Drawer open={open} class="p-8 flex flex-col items-center sm:hidden">
         {Left}
         {Right}
       </Drawer>

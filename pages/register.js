@@ -18,8 +18,8 @@ export default () => {
                             <div className="inline-flex flex-col">Confirm Password <input name="password" type="password" className="border border-zinc-400 rounded-lg p-4 md:p-2 w-full" /></div>
                         </div>
                         <div className="flex flex-col md:flex-row gap-2 py-4">
-                            <button className="hover:bg-gray-300 border border-gray-800 hover:shadow-gray-800 shadow  rounded-lg py-4 md:py-2 md:w-3/4 font-semibold" type="submit">Register</button>
-                            <a className="text-center text-gray-600 select-none hover:bg-gray-500 hover:text-white hover:shadow-gray-800 shadow rounded-lg py-4 px-1 md:py-2 md:w-1/4 font-semibold" href="/login">Login?</a>
+                            <button className="hover:bg-[#00000033] border border-gray-600  hover:shadow-gray-800 shadow  rounded-lg py-4 md:py-2 md:w-3/4 font-semibold" type="submit">Register</button>
+                            <a className="text-center text-gray-600 select-none hover:bg-[#00000033] hover:text-white hover:shadow-gray-800 shadow rounded-lg py-4 px-1 md:py-2 md:w-1/4 font-semibold" href="/login">Login?</a>
                         </div>
                     </form>
                 </div>

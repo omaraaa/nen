@@ -1,7 +1,12 @@
 module.exports = {
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+    },
+    extend: {
+
+    },
   },
   variants: {
     extend: {},
