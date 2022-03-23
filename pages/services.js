@@ -4,8 +4,8 @@ import ServiceItem from '../components/ServiceItem'
 export default () => (
   <Layout >
     <Article title="Services">
-      <div className="px-2 space-y-2">
-        <section className=' sm:px-4 space-y-2'>
+      <div className="space-y-2">
+        <section className=' space-y-2'>
           <div className='text-2xl font-black'>
             Digitization & Automation
           </div>
@@ -24,7 +24,7 @@ export default () => (
             </div>
           </div>
         </section>
-        <section className='sm:p-4 space-y-2'>
+        <section className='space-y-2'>
           <div className='text-2xl font-black'>
             Codebase Services
           </div>
@@ -38,14 +38,14 @@ export default () => (
             </div>
           </div>
         </section>
-        <section className='sm:p-4'>
+        <section className=''>
           <div className='text-2xl font-black'>
             Contact Us
           </div>
           <form className='flex flex-col sm:p-2 space-y-2'>
-            <label for="email" className='font-bold text-lg'>Email</label>
+            <label htmlFor="email" className='font-bold text-lg'>Email</label>
             <input type="text" name="text" className='p-1 border border-gray-400 w-full rounded'></input>
-            <label for="email" className='font-bold text-lg'>Message</label>
+            <label htmlFor="email" className='font-bold text-lg'>Message</label>
             <textarea type="email" name="email" className='p-1 border border-gray-400 w-full h-64 rounded'></textarea>
 
             <div className='flex justify-end '>
