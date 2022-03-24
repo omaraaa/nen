@@ -14,20 +14,16 @@ const HeaderLink = ({ children, href, ...props }) => {
   );
 };
 
-const Left = (
-  <>
-    {/* <HeaderLink href="/about">About</HeaderLink>
-    <HeaderLink href="/services">Services</HeaderLink>
-    <HeaderLink href="/dashboard">Dashboard</HeaderLink> */}
-  </>
-);
+const Left = [
+  /* <HeaderLink href="/about">About</HeaderLink>,
+    <HeaderLink href="/services">Services</HeaderLink>,
+    <HeaderLink href="/dashboard">Dashboard</HeaderLink> */
+];
 
-const Right = (
-  <>
-    {/* <HeaderLink href="/login">Login</HeaderLink>
-    <HeaderLink href="/register">Register</HeaderLink> */}
-  </>
-);
+const Right = [
+  /* <HeaderLink href="/login">Login</HeaderLink>,
+    <HeaderLink href="/register">Register</HeaderLink> */
+];
 
 export default ({ className }) => {
   const [open, setOpen] = useState(false);
@@ -51,28 +47,30 @@ export default ({ className }) => {
             {Right}
           </div>
         </div>
-        <button
-          className=" flex w-full  rounded-lg active:ring sm:hidden text-md justify-center items-center"
-          onClick={() => setOpen(!open)}
-        >
-          <div className="flex-grow px-px"></div>
-          <span className="text-center font-black pr-4 pt-1 items-center ">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="none"
-              viewBox="0 1.5 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              />
-            </svg>
-          </span>
-        </button>
+        {Left.length > 0 && Right.length > 0 && (
+          <button
+            className=" flex w-full  rounded-lg active:ring sm:hidden text-md justify-center items-center"
+            onClick={() => setOpen(!open)}
+          >
+            <div className="flex-grow px-px"></div>
+            <span className="text-center font-black pr-4 pt-1 items-center ">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8"
+                fill="none"
+                viewBox="0 1.5 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+            </span>
+          </button>
+        )}
         <span className="hidden navbg  block absolute left-0 p-8 w-screen  -z-50"></span>
       </nav>
       {/* <div className="static">
