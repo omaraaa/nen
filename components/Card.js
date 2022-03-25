@@ -6,7 +6,7 @@ export default ({ children, title, className, ...props }) => {
         className
           ? className
           : "" +
-            " h-full flex rounded-lg shadow-lg shadow-black p-4 min-w-[8rem] items-center justify-center space-x-2 bg-gray-200 text-[#00050e]"
+            " h-full flex rounded-lg shadow-lg shadow-black p-4 min-w-[8rem] items-center justify-center space-x-2 bg-gray-300 text-[#00050e]"
       }
     >
       <div className="flex-grow flex flex-col justify-center items-center">

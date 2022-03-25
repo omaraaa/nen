@@ -6,8 +6,10 @@ export default () => (
   <Layout className="justify-items-center items-center">
     <div className="bg-[#00060d80]  space-y-8 min-h-screen">
       <div className="flex flex-col sm:items-center sm:justify-center sm:py-64 p-8">
-        <div className="text-5xl sm:text-6xl font-black">Node Edge Node</div>
-        <div className="text-4xl font-bold">
+        <div className="text-5xl sm:text-6xl font-black select-none">
+          Node Edge Node
+        </div>
+        <div className="text-4xl font-bold text-gray-400 select-none">
           Software Development and Consulting
         </div>
         {/* 
@@ -17,10 +19,10 @@ export default () => (
         >
           Start Now &#10132;
         </a> */}
-        <div className="flex flex-col sm:flex-row gap-2 sm:space-x-4  pt-8">
-          <Card title="Custom Software Solutions"></Card>
-          <Card title="Process Automation & Enchancement"></Card>
-          <Card title="Web Application Development"></Card>
+        <div className="flex flex-col sm:flex-row gap-2 sm:space-x-4  py-8 px-2 select-none">
+          <Card title="Digitization & Automation"></Card>
+          <Card title="AI & ML"></Card>
+          <Card title="Web Applications"></Card>
         </div>
         <div className="text-xl font-semibold py-8 text-center">
           Contact at: <a href="mailto:omar@nen.ae">omar@nen.ae</a>
