@@ -17,13 +17,13 @@ export default () => (
         >
           Start Now &#10132;
         </a> */}
-        <div className="grid sm:grid-rows-1 sm:grid-cols-3 gap-2 sm:space-x-4  pt-8">
+        <div className="flex flex-col sm:flex-row gap-2 sm:space-x-4  pt-8">
           <Card title="Custom Software Solutions"></Card>
           <Card title="Process Automation & Enchancement"></Card>
           <Card title="Web Application Development"></Card>
         </div>
         <div className="text-xl font-semibold py-8 text-center">
-          Contact At: <a href="mailto:omar@nen.ae">omar@nen.ae</a>
+          Contact at: <a href="mailto:omar@nen.ae">omar@nen.ae</a>
         </div>
       </div>
     </div>
