@@ -25,7 +25,14 @@ export default () => (
           <Card title="Web Applications"></Card>
         </div>
         <div className="text-xl font-semibold py-8 text-center">
-          Contact at: <a href="mailto:omar@nen.ae">omar@nen.ae</a>
+          <object
+            type="image/svg+xml"
+            data="layered-waves.svg"
+            className="absolute left-0 bottom-0 py-8 -z-50 w-full"
+          ></object>
+          <span className="">
+            Contact at: <a href="mailto:omar@nen.ae">omar@nen.ae</a>
+          </span>
         </div>
       </div>
     </div>
